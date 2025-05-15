@@ -6,7 +6,7 @@ import { db } from './db.js'
 const app = express()
 
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: '*',
   credentials: false,
 }))
 app.use(express.json())
